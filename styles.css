@@ -1695,15 +1695,24 @@ textarea {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
+  .footer-body-content h5 {
+    display: flex;
+    justify-content: center;
+  }
   .pages-widget-container,.twitter-widget-container,.flickr-widget-container,.newsletter-widget-container {
     width: 100%;
   }
+  .social-container {
+    margin-top: 50px;
+  }
   .square-img-container {
     display: grid;
-    grid-template-columns: 85px 85px 85px;
+    justify-content: center;
+    grid-template-columns: 85px 85px 85px 85px 85px;
   }
   .social-widget-icons {
     display: flex;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 678px){
@@ -1712,6 +1721,10 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 60px;
+  }
+  .square-img-container {
+    display: grid;
+    grid-template-columns: 85px 85px 85px 85px;
   }
 }
 /*********************************** END FOOTER */
